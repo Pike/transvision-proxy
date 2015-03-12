@@ -1,6 +1,9 @@
 name: transvision-proxy
 framework:
-    type: standalone
-    runtime: python27
-mem: 256M
-instances: 1
+    type: generic
+requirements:
+    running:
+        ubuntu:
+            - nginx
+processes:
+    web: sudo nginx -c $PWD/nginx.conf
