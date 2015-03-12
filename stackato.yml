@@ -1,0 +1,6 @@
+name: transvision-proxy
+framework:
+    type: standalone
+    runtime: python27
+mem: 256M
+instances: 1
